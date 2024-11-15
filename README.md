@@ -2,6 +2,9 @@ Welcome to your new dbt project!
 
 ### Using the starter project
 
+#### Step 1: create a python virtual environment
+```py -3.11 -m venv virtual_env_name```
+
 Try running the following commands:
 - dbt run
 - dbt test
