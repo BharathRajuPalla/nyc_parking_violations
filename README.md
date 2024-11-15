@@ -5,14 +5,22 @@ Welcome to your new dbt project!
 #### Step 1: create a python virtual environment
 ```py -3.11 -m venv virtual_env_name```
 
-Try running the following commands:
-- dbt run
-- dbt test
+#### Step 2: activate the virtual environment
+```virtual_env_name\Scripts\activate```
 
+#### Step 3: install dependencies using requirements.txt
+```pip install -r requirements.txt```
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+#### Step 4: clone git repositry
+```git clone https://github.com/BharathRajuPalla/nyc_parking_violations.git```
+
+#### Step 5: navigate to the project directory
+```cd nyc_parking_violations```
+
+#### Step 6: run dbt commands
+##### Step 6.1: run dbt debug to check any connection errors
+```dbt debug --target dev```
+##### Step 6.2: run dbt compile to see any compilation errors
+```dbt compile --target dev```
+##### Step 6.3: run dbt run to see the results of the dbt commands
+```dbt run --target dev```
